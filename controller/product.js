@@ -3,7 +3,7 @@ const Product = require("../models/product");
 const getProducts = async (category) => {
   try {
     let filters = {};
-    let sortQuery = { _id: -1 };
+    let sortQuery = { _id: 1 };
     if (category) {
       filters.category = category;
     }
